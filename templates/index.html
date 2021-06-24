@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sports73</title>
+	<style>
+		body
+		{
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-image: url({{url_for('static', filename='builtin/sports.jpg')}})
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center" style="font-family: Arial, Helvetica, sans-serif;">Sports73</h1>
+
+	<form class="p-3 text-center" action="/" method="post" enctype="multipart/form-data">
+		<input class="form-control" type="file" name="imagefile">
+		<input class="btn btn-primary mt-3" type="submit" value="predict sport">
+	</form>
+	<br><br>
+	{% if prediction %}
+		<p class="text-center" style="font-family: Arial, Helvetica, sans-serif;"><h3>{{prediction}}</h3></p>
+	{% endif %}
+</body>
+</html>
