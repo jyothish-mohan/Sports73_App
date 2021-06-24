@@ -19,3 +19,6 @@ The model was trained on Google Colab GPU Instance.The code for training this mo
 ## Results when the app is running
 
 ![before_pred](https://user-images.githubusercontent.com/56919787/123284282-c32fd780-d529-11eb-84e4-7e089fd55de4.png)
+
+### Result given my the model
+![after_pred](https://user-images.githubusercontent.com/56919787/123284631-05f1af80-d52a-11eb-96e8-41d4d37591b4.png)
